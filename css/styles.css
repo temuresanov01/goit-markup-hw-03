@@ -8,6 +8,21 @@
   --primary-text-color: #757575;
   --accent-text-color: #2196f3;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
 body {
   background-color: #ffffff;
   color: var(--primary-text-color);
