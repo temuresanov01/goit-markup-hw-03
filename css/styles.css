@@ -239,6 +239,10 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.card-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-list .title {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -247,8 +251,8 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .team-list .profession {
   font-family: 'Roboto', sans-serif;
@@ -258,7 +262,8 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 /*  footer */
@@ -319,6 +324,28 @@ address {
 }
 /* portfolio */
 
+/*portfolio main*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: none;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.button-filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+}
+.button-filter-list-item:not(:last-child) {
+  margin-right: 8px;
+}
 .button-filter-list .button-filter {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -328,7 +355,10 @@ address {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background: #f5f4fa;
+  display: inline-block;
   border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
 }
 .button-filter-list .button-filter:hover,
 .button-filter-list .button-filter:focus {
@@ -343,9 +373,30 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   background: #f5f4fa;
+  display: inline-block;
   border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
   color: var(--title-text-color-secondary);
   background-color: var(--accent-text-color);
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-list-item {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  display: block;
+}
+
+.card-content {
+  background-color: #ffffff;
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 .project-list .headline {
   font-family: 'Roboto', sans-serif;
@@ -356,6 +407,7 @@ address {
   color: var(--title-text-color);
 }
 .project-list .tagline {
+  margin-top: 4px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
