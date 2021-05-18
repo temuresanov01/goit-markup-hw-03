@@ -207,6 +207,12 @@ a {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
+/* Секция чем мы занимаемся */
+
+.we-make {
+  padding-top: 0px;
+}
 .section-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
